@@ -7,8 +7,6 @@
     <a class="button" (click)="filter = ''">All</a>
   </div>
 
-  <div>{{cart.length}}</div>
-
   <ul class="products">
     <li class="product-item" *ngFor="let product of getFilteredProducts()">
       <bot-product-details [product]="product" (buy)="addToCart(product)"></bot-product-details>

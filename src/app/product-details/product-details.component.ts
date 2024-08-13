@@ -34,7 +34,6 @@ export class ProductDetailsComponent {
   }
 
   buyButtonClicked(product: IProduct) {
-    console.log(`Product ${product.name} added to cart`);
     this.buy.emit();
   }
 }
